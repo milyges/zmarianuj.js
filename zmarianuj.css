@@ -1,0 +1,143 @@
+/*
+ * ----------------------------------------------------------------------------
+ * "THE BEER-WARE LICENSE":
+ * Grzegorz <milyges> Gliński <milyges@gmail.com> wrote this file. 
+ * As long as you retain this notice you can do whatever you want with this stuff. 
+ * If we meet some day, and you think this stuff is worth it, 
+ * you can buy me a beer in return.
+ * ----------------------------------------------------------------------------
+ * 
+*/
+
+@keyframes play {
+   100% { background-position: -80px; }
+}
+
+@keyframes play-3 {
+   100% { background-position: -120px; }
+}
+
+@keyframes play-6 {
+   100% { background-position: -480px; }
+}
+
+@font-face {
+    font-family: 'PressStartP2';
+    src: url('gfx/PressStart2P.ttf');
+}
+
+.goomba {
+	width: 40px;
+	height: 40px;
+	background-image: url('gfx/goomba.png');
+	cursor: url('gfx/mario_jump.png') 20 20, pointer;
+	-webkit-animation: play .8s steps(2) infinite;
+	-moz-animation: play .8s steps(2) infinite;
+        -ms-animation: play .8s steps(2) infinite;
+        -o-animation: play .8s steps(2) infinite;
+	animation: play .8s steps(2) infinite;
+}
+
+.goomba-dead {
+	width: 40px;
+	height: 40px;
+	background: url('gfx/goomba-dead.png') no-repeat center bottom;
+}
+
+.koopa-right {
+	width: 40px;
+	height: 60px;
+	background: url('gfx/koopa-right.png');
+	cursor: url('gfx/mario_jump.png') 20 20, pointer;
+	-webkit-animation: play .8s steps(2) infinite;
+	-moz-animation: play .8s steps(2) infinite;
+        -ms-animation: play .8s steps(2) infinite;
+        -o-animation: play .8s steps(2) infinite;
+	animation: play .8s steps(2) infinite;
+}
+
+
+.koopa-left {
+	width: 40px;
+	height: 60px;
+	background: url('gfx/koopa-left.png');
+	cursor: url('gfx/mario_jump.png') 20 20, pointer;
+	position: absolute;
+	-webkit-animation: play .8s steps(2) infinite;
+	-moz-animation: play .8s steps(2) infinite;
+        -ms-animation: play .8s steps(2) infinite;
+        -o-animation: play .8s steps(2) infinite;
+	animation: play .8s steps(2) infinite;
+}
+
+.koopa-dead {
+	width: 40px;
+	height: 60px;
+	background: url('gfx/koopa-dead.png') no-repeat center bottom;
+	cursor: url('gfx/mario_jump.png') 20 20, pointer;
+	position: absolute;
+}
+
+.questionmark {
+	width: 40px;
+	height: 40px;
+	background-image: url('gfx/questionmark.png');
+	cursor: url('gfx/mario_jump.png') 20 20, pointer;
+	-webkit-animation: play-6 1.4s steps(6) infinite;
+	-moz-animation: play-6 1.4s steps(6) infinite;
+        -ms-animation: play-6 1.4s steps(6) infinite;
+        -o-animation: play-6 1.4s steps(6) infinite;
+	animation: play-6 1.4s steps(6) infinite;
+}
+
+.questionmark-empty {
+	width: 40px;
+	height: 40px;
+	background-image: url('gfx/questionmark-empty.png');
+}
+
+
+.scoreboard {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 8px;
+	background: black;
+	z-index: 999;
+	color: #ddd;
+	font-family: 'PressStartP2';
+	font-size: 30px;
+}
+
+.coin {
+	width: 40px;
+	height: 40px;
+	background-image: url('gfx/coin-ani.png');
+	-webkit-animation: play-3 1s steps(3) infinite;
+	-moz-animation: play-3 1s steps(3) infinite;
+        -ms-animation: play-3 1s steps(3) infinite;
+        -o-animation: play-3 1s steps(3) infinite;
+	animation: play-3 1s steps(3) infinite;
+	float: left;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.coin-spacer {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+
+.cloudguy {
+	width: 40px;
+	height: 60px;
+	background-image: url('gfx/cloudguy.png');
+	-webkit-animation: play 2s steps(2) infinite;
+	-moz-animation: play 2s steps(2) infinite;
+        -ms-animation: play 2s steps(2) infinite;
+        -o-animation: play 2s steps(2) infinite;
+	animation: play 2s steps(2) infinite;
+}
+
